@@ -4,7 +4,10 @@
 	</head>
 	<body>
 		<div ng-controller="BasicController">
-            <div>{{somevar}} - {{someModel}}<div>
+            <div>
+                <span>{{somevar}}</span>
+                <span ng-if="someModel">- {{someModel}}</span>
+            <div>
 			<input ng-model="someModel"/>
 		</div>
         
