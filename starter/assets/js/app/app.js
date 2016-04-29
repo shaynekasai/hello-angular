@@ -20,3 +20,18 @@
  * }])
  */
 app = angular.module('starterApp', []);
+
+/*
+ * You can also build your application using multiple modules. For scalability, you may want to consider
+ * breaking your application into parts, as some would suggest, by functionality.
+ *
+ * angular.module('UserList', []);
+ * angular.module('Stats', []);
+ * angular.module('Comments', [])
+ * angular.module('Dashboard', ['Stats', 'Comments']);
+ * angular.module('MainApplication', ['UserList', 'Dashboard'])
+ *
+ */
+ 
+ 
+ 
