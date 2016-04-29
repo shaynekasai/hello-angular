@@ -1,0 +1,30 @@
+<html ng-app="starterApp">
+    <head>
+			
+	</head>
+	<body>
+		<div ng-controller="BasicController">
+            <div>{{somevar}} - {{someModel}}<div>
+			<input ng-model="someModel"/>
+		</div>
+        
+        <div ng-controller="ListController">
+            <ul ng-repeat="color in colorData">
+                <li style="color:{{color.value}}">{{color.color}}</li>
+            </ul>
+
+            <a href="" ng-click="popColorData()">remove a color</a>
+            <a href="" ng-click="pushColorData()">add a color</a>
+            
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script type="text/javascript" src="assets/js/app/app.js"></script>
+        <script type="text/javascript" src="assets/js/app/controllers/BasicController.js"></script>
+        <script type="text/javascript" src="assets/js/app/controllers/ListController.js"></script>
+        
+        <script type="text/javascript">
+
+
+        </script>
+    </body>
+</html>
