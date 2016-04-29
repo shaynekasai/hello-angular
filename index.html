@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+		<script type="text/javascript">
+		angular.module('helloApp', []).
+				controller('HelloWorldController', function($scope) {
+				$scope.somevar = 'foo';
+
+		});
+		</script>	
+	</head>
+	<body ng-app="helloApp">
+		<div ng-controller="HelloWorldController">
+			{{somevar}}<br/>
+			
+			{{hello}}<br/>
+			
+			<a href="">Angular Event Binding - ng-click</a><br/>
+
+			<input ng-model="hello"/>
+		</div>
+
+		<div ng-controller="AnotherController"></div>
+	</body>
+</html>
