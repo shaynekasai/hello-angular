@@ -6,17 +6,17 @@
         <h1>Quick template demonstrating multiple modules.</h1>
         <div ng-app="DashboardApp">
             
-                <div ng-controller="DashboardController">
-                    <input type="button" ng-click="displayNotice()" value="Display Notice"/>
+            <div ng-controller="DashboardController">
+                <input type="button" ng-click="displayNotice()" value="Display Notice"/>
 
-                    <div>{{messages.notice}}</div>
-                </div>
+                <div>{{messages.notice}}</div>
+            </div>
 
-                <div ng-controller="UsersController">
-                    <ul ng-repeat="person in names">
-                        <li>{{person.name}}</li>
-                    </ul>
-                </div>
+            <div ng-controller="UsersController">
+                <ul ng-repeat="person in names">
+                    <li>{{person.name}}</li>
+                </ul>
+            </div>
 
         <div>
 	
