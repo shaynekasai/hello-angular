@@ -5,6 +5,8 @@
 
   The above gives you access to $http so you can make requests (XMLHttpRequest or JSONP).
  */
+
+// Notice here how it's attached to app    
 app.controller('ListController', ['$scope', function($scope) {
     $scope.colorData = [
         {
